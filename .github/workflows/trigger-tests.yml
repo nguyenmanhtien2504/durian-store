@@ -1,0 +1,17 @@
+name: Trigger Playwright Tests in Project durian-store
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Project durian-store's Playwright tests
+        run: |
+          curl -X POST https://api.github.com/repos/nguyenmanhtien2504/playwright/dispatches \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+          -d '{"event_type":"run-playwright-tests"}'
