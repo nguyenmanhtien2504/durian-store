@@ -22,7 +22,7 @@ export default function Home() {
               </p>
               <p className="text-gray-600 mb-6">
                 Tất cả sầu riêng của chúng tôi đều được trồng theo quy trình hữu cơ, không sử dụng hóa chất độc hại, đảm
-                bảo an toàn cho sức khỏe người tiêu dùng.
+                bảo an toàn cho sức khỏe người tiêu dùng, đảm bảo chất lượng và giá cả hợp lý.
               </p>
               <Button asChild className="bg-green-600 hover:bg-green-700">
                 <Link href="/gioi-thieu">Tìm hiểu thêm</Link>
